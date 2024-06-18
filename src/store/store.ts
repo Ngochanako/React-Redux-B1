@@ -7,6 +7,7 @@ import ListProductReducer from './reducers/ListProductReducer';
 import RandomNumbersReducer from './reducers/RandomNumberReducer';
 import ChangeStateReducer from './reducers/ChangeStateReducer';
 import ChangeColorReducer from './reducers/ChangeColorReducer';
+import UserRegisterReducer from './reducers/UserRegisterReducer';
 const rootReducer=combineReducers({
     user:userReducer,
     listUser:listUserReducer,
@@ -15,6 +16,7 @@ const rootReducer=combineReducers({
     randomNumbers:RandomNumbersReducer,
     changeState:ChangeStateReducer,
     changeColor:ChangeColorReducer,
+    registerUser:UserRegisterReducer,
 })
 const store=createStore(rootReducer);
 export default store;
